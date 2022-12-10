@@ -1,0 +1,38 @@
+footer {
+    background: var(--bg-color-black);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.footer__wrapper {
+    display: flex;
+    align-items: baseline;
+}
+
+
+address p {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--white-color);
+    margin-bottom: 9px;
+}
+
+address a {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--adress-a-color);
+}
+
+address li:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+

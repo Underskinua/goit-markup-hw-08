@@ -1,0 +1,36 @@
+.btn-filter {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.portfolio {
+    padding: 94px 0;
+
+    & button {
+        font-family: "Roboto", sans-serif;
+        white-space: nowrap;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;
+        color: var(--h2-h3-color);
+        background: var(--background-button-color);
+        border-radius: 4px;
+        padding: 6px 25px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            background: var(--hover-color);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+            color: var(--white-color);
+            outline: none;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.experience__content {
+    padding-top: 0px;
+    padding-bottom: 94px;
+
+    & h2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        color: var(--h2-h3-color);
+        margin-bottom: 50px;
+    }
+}
+
+.experience__content__img {
+    display: flex;
+    gap: 30px;
+}
+
+.experience__wrapper {
+    position: relative;
+}
+
+.experience__description {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0px;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+
+    h3 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16.41px;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+}

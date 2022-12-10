@@ -1,0 +1,42 @@
+.footer-social__content {
+    margin-left: 70px;
+
+
+    & p {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+}
+
+
+.footer-social__icon-indent {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social__icon {
+    fill: #ffffff;
+}
+
+
+.footer-social__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover,
+    &:focus {
+        background-color: var(--hover-color);
+    }
+}

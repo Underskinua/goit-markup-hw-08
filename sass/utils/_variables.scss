@@ -1,0 +1,67 @@
+
+:root {
+    --hover-color: #2196f3;
+    --h2-h3-color: #212121;
+    --text-color: #757575;
+    --icon-logo-color: #afb1b8;
+    --bg-color-black: #2f303a;
+    --logo-color-black: #000000;
+    --white-color: #ffffff;
+    --background-button-color: #f5f4fa;
+    --adress-a-color: rgba(255, 255, 255, 0.6);
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    margin: -1px;
+}
