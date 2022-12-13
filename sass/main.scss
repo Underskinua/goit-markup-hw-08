@@ -1,4 +1,5 @@
 @import './utils/_variables';
+@import './utils/_base-styles';
 
 @import './components/header';
 @import './components/header-logo';
@@ -7,7 +8,7 @@
 @import './components/experiance-section';
 @import './components/command-section';
 @import './components/command-icon';
-@import "./components/our-client-section";
+@import './components/our-client-section';
 
 @import './components/modal-close-btn';
 @import './components/modal';
