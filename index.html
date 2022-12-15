@@ -50,14 +50,10 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu-btn" data-menu-open>
-          <svg class="mobile-menu-btn__icon" width="40" height="40">
-            <use href="./images/icons.svg#icon-burger"></use>
-          </svg>
-        </button>
+
         <!--right-------------------------->
         <div class="navigation__contact">
-          <ul class="navigation__list list">
+          <ul class="navigation__list list navigation__contact-wrap">
             <li class="navigation__menu hover">
               <a class="navigation__mail" href="mailto:info@devstudio.com">
                 <svg class="icon-envelope" width="16" height="12">
@@ -78,12 +74,17 @@
           </ul>
         </div>
         <!--right-end---------------------------->
+        <button type="button" class="mobile-menu-btn js-open-menu">
+          <svg class="mobile-menu-btn__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
       <!--container-end-->
 
-      <div class="mobile-menu" data-menu>
+      <div class="mobile-menu js-menu-container">
         <div class="container mobile-menu__container">
-          <button type="button" class="mobile-menu__close-btn" data-menu-close>
+          <button type="button" class="mobile-menu__close-btn js-close-menu">
             <svg class="mobile-menu__close-icon" width="40" height="40">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
@@ -120,18 +121,18 @@
             </li>
           </ul>
           <ul class="mobile-menu__social-btn list">
-            <li>
+            <li class="mobile-menu__social-btn__border">
               <a class="link mobile-menu__social-btn__link" href=""
                 >Instagram</a
               >
             </li>
-            <li>
+            <li class="mobile-menu__social-btn__border">
               <a class="link mobile-menu__social-btn__link" href="">Twitter</a>
             </li>
-            <li>
+            <li class="mobile-menu__social-btn__border">
               <a class="link mobile-menu__social-btn__link" href="">Facebook</a>
             </li>
-            <li>
+            <li class="mobile-menu__social-btn__border">
               <a class="link mobile-menu__social-btn__link" href="">LinkedIn</a>
             </li>
           </ul>
@@ -666,6 +667,6 @@
   -->
 
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
