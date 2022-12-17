@@ -1,21 +1,72 @@
-.logo__text-dark {
-    font-family: "Raleway", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    color: var(--logo-color-black);
+@media screen and (max-width: 767px) {
+    .logo__text-dark {
+        font-family: "Raleway", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 0.85;
+        color: var(--logo-color-black);
+    }
+    
+     .logo__header {
+        margin-right: 94px;
+    }
+    
+    .logo__text-blue {
+        font-family: "Raleway", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 0.85;
+        color: var(--hover-color);
+    }
+    
 }
 
-.logo__header {
-    margin-right: 94px;
+@media screen and (min-width: 768px) {
+    .logo__header {
+        margin-right: 88px;
+    }
+
+    .logo__text-dark {
+        font-family: "Raleway", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 0.85;
+        color: var(--logo-color-black);
+    }
+
+    .logo__text-blue {
+        font-family: "Raleway", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 0.85;
+        color: var(--hover-color);
+    }
 }
 
-.logo__text-blue {
-    font-family: "Raleway", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    color: var(--hover-color);
+@media screen and (min-width: 1200px) {
+    .logo__text-dark {
+        font-family: "Raleway", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        color: var(--logo-color-black);
+    }
+    
+    .logo__header {
+        margin-right: 94px;
+    }
+    
+    .logo__text-blue {
+        font-family: "Raleway", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        color: var(--hover-color);
+    }
 }
