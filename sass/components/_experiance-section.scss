@@ -11,6 +11,10 @@
         color: var(--h2-h3-color);
         margin-bottom: 50px;
     }
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }
 
 .experience__content__img {

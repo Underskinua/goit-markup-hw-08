@@ -2,6 +2,10 @@
     background-color: #f5f4fa;
     padding: 94px 0;
 
+    @media screen and (max-width: 767px) {
+        padding: 60px 0;
+    }
+
     & h2 {
         
         font-weight: 700;
@@ -11,30 +15,53 @@
         color: var(--h2-h3-color);
         margin-bottom: 50px;
 
+        @media screen and (max-width: 767px) {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
     }
 
     & h3 {
-        
+        font-family: "Roboto", sans-serif;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.18;
         text-align: center;
         color: var(--h2-h3-color);
         margin-bottom: 10px;
+
+        // @media screen and (max-width: 767px) {
+            // text-align: start;
+        // }
+        
     }
 
     & p {
-        
+        font-family: "Roboto", sans-serif;
         font-size: 16px;
         line-height: 1.18;
+        letter-spacing: 0.03em;
         text-align: center;
         color: var(--text-color);
+
+        // @media screen and (max-width: 767px) {
+            /// text-align: start;
+            
+        // }
+        
     }
 }
 
 .our-command__indent {
     display: flex;
     gap: 30px;
+
+
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;          
+    }
 }
 
 .our-command__card {
@@ -43,9 +70,28 @@
     border-bottom-right-radius: 4px;
     box-shadow: 0px 2px 1px rgb(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 1px 3px rgba(0, 0, 0, 0.12);
+         
+        & img {
+        @media screen and (max-width: 767px) {
+            width: 100%;
+                     
+        }
+            }        
 }
 
+
+ 
 .our-command__card-indent {
     padding: 30px 32px;
+
+    @media screen and (max-width: 767px) {
+        display: inline-block;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 24px;
+        padding-left: 122px;
+        padding-right: 122px;  
+         
+    }
 }
 
