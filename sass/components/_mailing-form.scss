@@ -1,6 +1,11 @@
 .footer-mailing__content {
     margin-left: auto;
 
+    @media screen and (min-width: 480px) {
+        text-align: center;
+        
+    }
+
     & p {
         font-family: "Roboto", sans-serif;
         font-weight: 700;
@@ -14,6 +19,10 @@
 
 .footer-mailing__form {
     display: flex;
+
+    @media screen and (min-width: 480px) {
+        flex-wrap: wrap;
+    }
 }
 
 .footer-mailing__input {
@@ -30,6 +39,12 @@
     padding-right: auto;
     cursor: pointer;
     color: #ffffff;
+
+    @media screen and (min-width: 480px) {
+        box-sizing: border-box;
+        width: 450px;
+        margin-bottom: 20px;
+    }
 
     &:focus {
         border-color: var(--hover-color);

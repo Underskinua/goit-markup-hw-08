@@ -1,72 +1,47 @@
-@media screen and (max-width: 767px) {
-    .logo__text-dark {
-        font-family: "Raleway", sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 0.85;
-        color: var(--logo-color-black);
-    }
+.logo__header {
     
-     .logo__header {
-        margin-right: 94px;
-    }
-    
-    .logo__text-blue {
-        font-family: "Raleway", sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 0.85;
-        color: var(--hover-color);
-    }
-    
-}
-
-@media screen and (min-width: 768px) {
-    .logo__header {
+    @media screen and (min-width: 480px) {
         margin-right: 88px;
     }
-
-    .logo__text-dark {
-        font-family: "Raleway", sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 0.85;
-        color: var(--logo-color-black);
-    }
-
-    .logo__text-blue {
-        font-family: "Raleway", sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 0.85;
-        color: var(--hover-color);
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .logo__text-dark {
-        font-family: "Raleway", sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.19;
-        color: var(--logo-color-black);
-    }
     
-    .logo__header {
+    @media screen and (min-width: 1200px) {
         margin-right: 94px;
     }
-    
-    .logo__text-blue {
+}
+
+.logo__text-dark {
+
+    @media screen and (min-width: 480px) {
         font-family: "Raleway", sans-serif;
         font-style: normal;
         font-weight: 700;
+        font-size: 24px;
+        line-height: 0.85;
+        color: var(--logo-color-black);
+    }
+
+    @media screen and (min-width: 1200px) {
         font-size: 26px;
-        line-height: 1.19;
-        color: var(--hover-color);
+        line-height: 1.19;        
     }
 }
+        
+    .logo__text-blue {
+
+        @media screen and (min-width: 480px) {
+            font-family: "Raleway", sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 0.85;
+            color: var(--hover-color);
+        }
+        
+
+        @media screen and (min-width: 1200px) {
+            font-size: 26px;
+            line-height: 1.19;
+        }
+                    
+    }
+    

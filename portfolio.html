@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <!--fonts-end----------------------------------->
+
     <!--normalazi----------------------------------->
     <link
       rel="stylesheet"
@@ -37,7 +37,6 @@
               ><span class="logo__text-dark">Studio</span></a
             >
           </div>
-          <!--Logo-end------------------>
           <!--menu-buttons------ ------>
           <ul class="navigation__list list hover">
             <li class="navigation__menu">
@@ -53,10 +52,11 @@
             </li>
           </ul>
         </nav>
+
         <!--right------------------------>
         <div class="navigation__contact">
-          <ul class="navigation__list list">
-            <li class="navigation__menu hover">
+          <ul class="navigation__list list navigation__contact-wrap">
+            <li class="navigation__contact-items hover">
               <a class="navigation__mail" href="mailto:info@devstudio.com">
                 <svg class="icon-envelope" width="16" height="12">
                   <use href="./images/icons.svg#envelope"></use>
@@ -65,7 +65,7 @@
               </a>
             </li>
 
-            <li class="navigation__menu hover">
+            <li class="navigation__contact-items hover">
               <a class="navigation__telephone" href="tel:+380961111111">
                 <svg class="icon-smartphone" width="10" height="16">
                   <use href="./images/icons.svg#smartphone"></use>
@@ -75,8 +75,71 @@
             </li>
           </ul>
         </div>
+        <!--right-end---------------------------->
+        <button type="button" class="mobile-menu-btn js-open-menu">
+          <svg class="mobile-menu-btn__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
       <!--container-end-->
+
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu__close-btn js-close-menu">
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="list mobile-menu__page__indent">
+            <li>
+              <a class="link mobile-menu__page__link" href="./index.html"
+                >Студія</a
+              >
+            </li>
+            <li>
+              <a class="link mobile-menu__page__link" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li>
+              <a class="link mobile-menu__page__link" href="#">Контакти</a>
+            </li>
+          </ul>
+          <ul class="list mobile-menu__contact__indent">
+            <li>
+              <a
+                class="link mobile-menu__contact__number"
+                href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li>
+              <a
+                class="link mobile-menu__contact__mail"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__social-btn list">
+            <li class="mobile-menu__social-btn__border">
+              <a class="link mobile-menu__social-btn__link" href=""
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile-menu__social-btn__border">
+              <a class="link mobile-menu__social-btn__link" href="">Twitter</a>
+            </li>
+            <li class="mobile-menu__social-btn__border">
+              <a class="link mobile-menu__social-btn__link" href="">Facebook</a>
+            </li>
+            <li class="mobile-menu__social-btn__border">
+              <a class="link mobile-menu__social-btn__link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <!--navigation-section-end---------->
     <main>
@@ -714,7 +777,7 @@
     <footer>
       <div class="container">
         <div class="footer__wrapper">
-          <div class="">
+          <div class="footer__wrapper-adress">
             <div class="footer__logo-wrapper">
               <a href="#"
                 ><span class="logo__text-blue">Web</span
@@ -792,7 +855,6 @@
               </button>
             </form>
           </div>
-          <!-------------------------->
         </div>
         <!--column-end-->
       </div>
@@ -800,5 +862,8 @@
     </footer>
 
     <!--footer-end---------------------->
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

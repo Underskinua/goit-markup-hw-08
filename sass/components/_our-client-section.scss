@@ -2,8 +2,7 @@
     padding: 94px 0;
 
     @media screen and (max-width: 767px) {
-        padding: 60px 0;
-        
+        padding: 60px 0;        
     }
 
     & h2 {
@@ -24,9 +23,11 @@
 
 .our-client__logo-wrapper {
     display: flex;
-    // gap: 30px;
+    gap: 30px;
 
-   
+    @media screen and (min-width: 480px) {          
+        flex-wrap: wrap;        
+    }    
 }
 
 .client-logo__icon {
@@ -34,8 +35,14 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-logo__indent:not(:last-child) {
-    margin-right: 30px;
+.client-logo__indent {
+    // margin-right: 30px; {
+        
+    @media screen and (min-width: 480px) {
+        box-sizing: border-box;
+        width: 450px;        
+        flex-basis: calc((100% - 30px) / 2);
+    }
 }
 
 .client-logo__link {
@@ -46,6 +53,11 @@
     align-items: center;
     justify-content: center;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 480px) {  
+        box-sizing: border-box;      
+        padding: 16px auto;
+    }
 
     &:hover,
     &:focus {

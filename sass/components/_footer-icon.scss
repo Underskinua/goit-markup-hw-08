@@ -1,6 +1,9 @@
 .footer-social__content {
     margin-left: 70px;
 
+    @media screen and (min-width: 480px) {
+        text-align: center;       
+    }
 
     & p {
         font-family: "Roboto", sans-serif;
@@ -9,14 +12,17 @@
         line-height: 16px;
         color: #ffffff;
         text-transform: uppercase;
-        margin-bottom: 20px;
+        margin-bottom: 20px;         
     }
 }
-
 
 .footer-social__icon-indent {
     display: flex;
     gap: 10px;
+
+    @media screen and (min-width: 480px) {
+        margin-bottom: 60px;        
+    }
 }
 
 .footer-social__icon {
@@ -38,5 +44,5 @@
     &:hover,
     &:focus {
         background-color: var(--hover-color);
-    }
+    }   
 }

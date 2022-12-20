@@ -10,7 +10,7 @@
     background-size: cover;
     padding: 200px 0;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 480px) {
         width: 480px;
         height: 400px;
         padding-top: 118px;        
@@ -23,7 +23,8 @@
     @media screen and (min-width: 768px) {
         width: 768px;
     }
- @media screen and (min-width: 1200px) {
+
+    @media screen and (min-width: 1200px) {
      width: 1600px;
  }
 
@@ -50,7 +51,7 @@
     text-transform: uppercase;
     color: var(--white-color);    
     
-    @media screen and (max-width: 767px) {            
+    @media screen and (min-width: 480px) {            
         width: 360px;      
         font-size: 26px;
         
@@ -88,7 +89,8 @@
     &:focus {
         background-color: #188ce8;
     }
-    @media screen and (max-width: 767px) {
+
+    @media screen and (min-width: 480px) {
         padding: 10px 24px 10px 24px;    
     }
         

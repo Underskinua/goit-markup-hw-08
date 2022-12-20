@@ -1,7 +1,7 @@
 .benefits__content {
     padding: 94px 0;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 480px) {
             padding: 60px 0;
         }
 
@@ -15,7 +15,7 @@
         color: var(--h2-h3-color);
         margin-bottom: 10px;
 
-        @media screen and (max-width: 767px) {
+        @media screen and (min-width: 480px) {
             text-align: center;            
         }
     }
@@ -29,7 +29,7 @@
         color: var(--text-color);
         word-wrap: break-word;
                 
-        @media screen and (max-width:767px) {
+        @media screen and (min-width: 480px) {
             padding-bottom: 30px;
         }       
     }
@@ -43,7 +43,7 @@
         padding-right: 30px;         
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 480px) {
         display: block;
         gap: 30px;
         
@@ -65,7 +65,7 @@
         margin-bottom: 30px;
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 480px) {
         text-align: center;        
     }
 }

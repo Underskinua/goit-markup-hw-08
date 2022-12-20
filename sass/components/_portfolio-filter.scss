@@ -3,10 +3,21 @@
     gap: 8px;
     margin-bottom: 50px;
     justify-content: center;
+
+    @media screen and (min-width: 480px) {  
+        width: 350px;
+        justify-content:flex-start;
+        flex-wrap: wrap; 
+        margin-bottom: 40px;          
+        }
 }
 
 .portfolio {
     padding: 94px 0;
+
+    @media screen and (min-width: 480px) {
+        padding: 60px 0;        
+    }
 
     & button {
         font-family: "Roboto", sans-serif;
@@ -32,5 +43,10 @@
             color: var(--white-color);
             outline: none;
         }
+
+        @media screen and (min-width: 480px) {            
+            
+            flex-basis: calc((100% - 16px) / 3);
+        }       
     }
 }
