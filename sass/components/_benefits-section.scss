@@ -1,10 +1,12 @@
-.benefits__content {
-    padding: 94px 0;
+.benefits__content {    
 
     @media screen and (min-width: 480px) {
-            padding: 60px 0;
-        }
+        padding: 60px 0;
+    }
 
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0;
+    }
 
     & h3 {
         
@@ -17,6 +19,10 @@
 
         @media screen and (min-width: 480px) {
             text-align: center;            
+        }
+
+        @media screen and (min-width: 768px) {
+            text-align: start;
         }
     }
 
@@ -31,7 +37,11 @@
                 
         @media screen and (min-width: 480px) {
             padding-bottom: 30px;
-        }       
+        }    
+        
+        @media screen and (min-width: 768px) {
+            padding-bottom: 0px;
+        }
     }
 }
 
@@ -44,22 +54,35 @@
     }
 
     @media screen and (min-width: 480px) {
-        display: block;
+        display: block;                
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
         gap: 30px;
         
     }
 
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
 }
 
 .benefit__content-indent {
-    flex-basis: calc((100% - 90px) / 4);
+    
+    @media screen and (min-width: 768px) {
+        
+        flex-basis: calc((100% - 30px) / 2);
+    }   
 
-   
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 90px) / 4);
+    }
 }
 
 .benefit__icon-border {
-    background-color: #f5f4fa;
-    padding: 25px 100px;
+    background-color: #f5f4fa;    
 
     &:not(:last-child) {
         margin-bottom: 30px;
@@ -67,5 +90,13 @@
 
     @media screen and (min-width: 480px) {
         text-align: center;        
+    }
+
+    @media screen and (min-width: 768px) {
+        padding: 25px 142px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 25px 100px;
     }
 }

@@ -2,8 +2,11 @@
     margin-left: auto;
 
     @media screen and (min-width: 480px) {
-        text-align: center;
-        
+        text-align: center;        
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-right: auto;
     }
 
     & p {
@@ -18,15 +21,24 @@
 }
 
 .footer-mailing__form {
-    display: flex;
-
+      
     @media screen and (min-width: 480px) {
+        display: flex;
         flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        text-align: center;        
+    }    
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: nowrap;
     }
 }
 
-.footer-mailing__input {
-    width: 358px;
+.footer-mailing__input {    
     height: 50px;
     border-radius: 4px;
     outline: none;
@@ -44,6 +56,12 @@
         box-sizing: border-box;
         width: 450px;
         margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        margin-right: 12px;
+        margin-bottom: 0;
     }
 
     &:focus {
