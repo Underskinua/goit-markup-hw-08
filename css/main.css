@@ -295,6 +295,10 @@ img {
   }
 }
 
+.mobile-menu__page__indent {
+  margin-left: 40px;
+}
+
 @media screen and (min-width: 480px) {
   .mobile-menu__page__indent li:nth-child(-n+2) {
     margin-bottom: 36px;
@@ -322,6 +326,10 @@ img {
     color: var(--hover-color);
     outline: none;
   }
+}
+
+.mobile-menu__contact__indent {
+  margin-left: 40px;
 }
 
 @media screen and (min-width: 480px) {
@@ -363,6 +371,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-left: 40px;
     padding-bottom: 48px;
   }
 }
@@ -711,11 +720,6 @@ img {
   color: var(--text-color);
   word-wrap: break-word;
 }
-@media screen and (min-width: 480px) {
-  .benefits__content p {
-    padding-bottom: 30px;
-  }
-}
 @media screen and (min-width: 768px) {
   .benefits__content p {
     padding-bottom: 0px;
@@ -753,6 +757,11 @@ img {
   }
 }
 
+@media screen and (width: 480px) {
+  .benefit__content-indent:not(:last-child) {
+    padding-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .benefit__content-indent {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
@@ -1142,10 +1151,6 @@ img {
 
 .modal {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 528px;
-  height: 581px;
   border-radius: 4px;
   background-color: #ffffff;
   -webkit-transform: translate(-50%, -50%);
@@ -1158,6 +1163,22 @@ img {
   transition: transform 1250ms cubic-bezier(0.4, 0, 0.2, 1), 1250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 1250ms cubic-bezier(0.4, 0, 0.2, 1), 1250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 1250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+    top: 40%;
+    left: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+    top: 50%;
+    left: 50%;
+  }
 }
 
 .modal__header {
@@ -1331,13 +1352,22 @@ img {
           justify-content: center;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
 .modal-form__checkbox-label a {
   color: var(--hover-color);
+}
+@media screen and (min-width: 480px) {
+  .modal-form__checkbox-label {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-form__checkbox-label {
+    font-size: 14px;
+  }
 }
 
 .modal-form__submit-btn {
@@ -1679,7 +1709,7 @@ address li:not(:last-child) {
 @media screen and (min-width: 480px) {
   .footer-social__content {
     text-align: center;
-    margin-left: auto;
+    margin-left: 120px;
     margin-right: auto;
   }
 }

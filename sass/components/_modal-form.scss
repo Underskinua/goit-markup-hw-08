@@ -133,12 +133,20 @@
     justify-content: center;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    
     line-height: 24px;
     letter-spacing: 0.03em;
     color: var(--text-color);
-
+    
     & a {
         color: var(--hover-color);
+    }
+
+    @media screen and (min-width: 480px) {
+        font-size: 12px;        
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
     }
 }
