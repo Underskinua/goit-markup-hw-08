@@ -24,8 +24,8 @@
 
     }
 
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
+    @media screen and (max-width: 1600px) {
+        width: 1600px;
         height: 600px;        
         padding: 200px 0;
         margin: auto;        
@@ -63,13 +63,9 @@
 
     @media  screen and (min-width: 1200px) {
         width: 696px;
-        font-size: 44px;
-        
+        font-size: 44px;        
     }
-
-
 }
-
 
 .banner button {
     font-weight: 700;
@@ -100,6 +96,5 @@
     @media screen and (min-width: 480px) {
         padding: 10px 24px 10px 24px;  
         margin-top: 30px;  
-    }
-        
+    }        
 }
