@@ -1,8 +1,8 @@
-.footer-social__content {    
-    @media screen and (min-width: 480px) {
-        text-align: center;  
-        margin-left: 120px;  
-        margin-right: auto;   
+.footer-social__content {       
+    text-align: center;
+    @media screen and (max-width: 767px) {        
+        margin-left: auto;
+        margin-right: auto;
     }
 
     @media screen and (min-width: 768px) {
@@ -11,7 +11,8 @@
     }
 
     @media screen and (min-width: 1200px) {
-        margin: 0px 94px;
+        margin: 0px 94px;     
+        text-align: start;   
     }
 
     & p {

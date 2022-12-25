@@ -3,21 +3,34 @@
     gap: 8px;
     margin-bottom: 50px;
     justify-content: center;
+    margin-bottom: 40px;
 
-    @media screen and (max-width: 767px) {  
+    @media screen and (min-width: 320px) {
+        width: 310px;
+        justify-content: flex-start;
+        flex-wrap: wrap;        
+    }
+
+    @media screen and (min-width: 480px) {  
         width: 350px;
         justify-content:flex-start;
-        flex-wrap: wrap; 
-        margin-bottom: 40px;          
-        }
+        flex-wrap: wrap;               
+    }
 
     @media screen and (min-width: 768px) {
-        margin-bottom: 30px;       
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 30px;  
+        flex-wrap: nowrap;     
     }
 }
 
 .portfolio {
     padding: 94px 0;
+
+    @media screen and (max-width: 479px) {
+        padding: 40px 0;
+    }
 
     @media screen and (min-width: 480px) {
         padding: 60px 0;        
@@ -48,9 +61,8 @@
             outline: none;
         }
 
-        @media screen and (min-width: 480px) {            
-            
-            flex-basis: calc((100% - 16px) / 3);
-        }       
+        @media screen and (max-width: 479px) {
+            padding: 6px 18px;
+        }
     }
 }
