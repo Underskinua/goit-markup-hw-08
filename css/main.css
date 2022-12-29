@@ -627,15 +627,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .banner {
-    width: 100%;
-    height: 600px;
+    max-width: 1600px;
     margin: 0 auto;
-    padding: 200px 0;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .banner {
-    width: 1600px;
   }
 }
 
