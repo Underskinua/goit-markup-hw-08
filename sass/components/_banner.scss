@@ -8,46 +8,55 @@
     background-position: center;
     background-size: cover;
     
-    @media screen and (max-width: 479px) {
-        width: 320px;
-        height: 240px;
-        padding-top: 118px;
-        padding-bottom: 198px;              
-    }
-
-    @media screen and (min-width: 480px) {
-        width: 480px;
+    @media screen and (max-width: 767px) {                
+        background-image: url(../images/mobile/hero-mobile.jpg);
         height: 400px;
-        padding-top: 118px;        
-        padding-bottom: 198px;              
+        padding-top: 118px;
+        padding-bottom: 198px;
+        
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(../images/mobile/hero-mobile-2x.jpg);
+        }
+
     }
 
     @media screen and (min-width: 768px) {
-        width: 768px;
+        background-image: url(../images/tablet/hero-tablet.jpg);
+        
+        height: 400px;
         padding-top: 118px;
         padding-bottom: 198px;
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(../images/tablet/hero-tablet-2x.jpg);
+        }
+
     }
 
     @media screen and (min-width: 1200px) {
+        background-image: url(../images/hero.jpg);
         max-width: 1600px;
-        // height: 600px;
+        height: 600px;
         margin: 0 auto; 
-        // padding: 200px 0;
+        padding: 200px 0;
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(../images/hero-2x.jpg);
+        }
+
     }
 
-    // @media screen and (min-width: 1600px) {
-        // width: 1600px;
-    // }   
+    
 }
 
-@media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+// @media (min-device-pixel-ratio: 2),
+    // (min-resolution: 192dpi),
+    // (min-resolution: 2dppx) {
     
-        .banner {
-        background-image: url(../images/hero-2x.jpg);
-    }
-} 
+        // .banner {
+        // background-image: url(../images/hero-2x.jpg);
+    // }
+// } 
 
 .banner h1 {    
     margin-left: auto;
