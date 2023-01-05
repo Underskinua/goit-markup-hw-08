@@ -194,8 +194,12 @@
 }
     
 .mobile-menu__page__indent li:nth-child(3) {
-    @media screen and (max-width: 767px) {
-        margin-bottom: 302px;
+    @media screen and (min-width: 290px) {
+        margin-bottom: 100px;
+    }
+
+    @media screen and (min-width: 480px) {
+        margin-bottom: 306px;
     }    
 }
     
@@ -204,7 +208,7 @@
         font-family: "Roboto", sans-serif;
         font-weight: 500;
         font-size: 40px;
-        line-height: 47px;
+        line-height: 1.17;
         letter-spacing: 0.02em;
         color: var(--h2-h3-color);
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -235,11 +239,11 @@
 .mobile-menu__contact__number {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    line-height: 40px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--hover-color);
 
-    @media screen and (max-width: 479px) {        
+    @media screen and (max-width: 479px) {          
         font-size: 28px;         
     }
 
@@ -251,11 +255,11 @@
 .mobile-menu__contact__mail {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    line-height: 28px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--text-color);
 
-    @media screen and (max-width: 479px) {        
+    @media screen and (max-width: 479px) {                   
         font-size: 18px;        
     }
 

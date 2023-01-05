@@ -14,11 +14,14 @@
     padding: 40px;
 
     @media screen and (max-width: 479px) {
-        width: 305px;        
+        top: 50%;
+        width: 305px;  
+        height: 560px;      
         padding: 15px;        
     }
 
     @media screen and (min-width: 480px) {
+        // top: 50%;
         width: 450px;        
     }
 
