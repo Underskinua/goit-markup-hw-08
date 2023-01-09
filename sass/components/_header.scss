@@ -227,6 +227,17 @@
     }    
 }
 
+.mobile-menu__page__link-active {
+    @media screen and (max-width: 767px) {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: var(--hover-color);
+    }
+}
+
 .mobile-menu__contact__indent {
     margin-left: 40px;  
     margin-bottom: 64px;  
