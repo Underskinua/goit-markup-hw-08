@@ -3,8 +3,7 @@
     margin-right: auto;
     @media screen and (max-width: 1199px) {
             text-align: center;
-        }      
-
+        }    
     & p {
         font-family: "Roboto", sans-serif;
         font-weight: 700;
@@ -24,18 +23,11 @@
     @media screen and (max-width: 767px) {
             display: flex;
             flex-wrap: wrap;
-        }
-
-    // @media screen and (min-width: 480px) {
-        // display: flex;
-        // flex-wrap: wrap;
-    // }
-
+    }
     @media screen and (min-width: 768px) {
         display: block;
         text-align: center;        
-    }    
-
+    }  
     @media screen and (min-width: 1200px) {
         display: flex;
         flex-wrap: nowrap;
@@ -55,31 +47,25 @@
     padding-right: auto;
     cursor: pointer;
     color: #ffffff;
-
     @media screen and (max-width: 479px) {
         box-sizing: border-box;
         width: 290px;
         margin-bottom: 20px;
     }
-
     @media screen and (min-width: 480px) {
         box-sizing: border-box;
         width: 450px;
         margin-bottom: 20px;
     }
-
     @media screen and (min-width: 1200px) {
         width: 358px;
         margin-right: 12px;
         margin-bottom: 0;
     }
-
     &:focus {
         border-color: var(--hover-color);
         color: #ffffff;
     }
-
-
     &::placeholder {
         font-family: "Roboto", sans-serif;
         font-weight: 400;

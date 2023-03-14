@@ -2,22 +2,18 @@
     @media screen and (max-width: 1199px) {
         padding: 60px 0;        
     }
-
     @media screen and (min-width: 1200px) {
         padding: 94px 0;
     }
-
     & h2 {        
         font-weight: 700;        
         line-height: 1.16;
         text-align: center;
-        color: var(--h2-h3-color);
-        
+        color: var(--h2-h3-color);        
         @media screen and (max-width: 1199px) {
             font-size: 28px;
             margin-bottom: 30px;
         }
-
         @media screen and (min-width: 1200px) {
             font-size: 36px;
             margin-bottom: 50px;
@@ -31,11 +27,9 @@
     justify-content: center;
     flex-shrink: 1;
     gap: 30px;
-
     @media screen and (max-width: 1199px) {          
         flex-wrap: wrap;        
-    }    
-
+    }  
     @media screen and (min-width: 1200px) {
         flex-wrap: nowrap;        
     }
@@ -44,12 +38,10 @@
 .client-logo__icon {
     fill: var(--icon-logo-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
     @media screen and (max-width: 479px) {
         width: 96px;
         height: 50px;
     }
-
     @media screen and (min-width: 480px) {
         width: 106px;
         height: 60px;
@@ -61,8 +53,7 @@
         box-sizing: border-box;
         width: 450px;
         flex-basis: calc((100% - 30px) / 2);
-    }
-    
+    }    
     @media screen and (min-width: 768px) {
         flex-basis: calc((100% - 60px) / 3);
     }    
@@ -76,24 +67,19 @@
     align-items: center;
     justify-content: center;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
     @media screen and (max-width: 479px) {
         padding: 10px 14px;
     }
-
     @media screen and (min-width: 480px) {             
         padding: 16px;
     }
-
     @media screen and (min-width: 1200px) {
         padding: 16px 32px;                
     }
-
     &:hover,
     &:focus {
         border-color: var(--hover-color);
     }
-
     &:hover .client-logo__icon,
     &:focus .client-logo__icon {
         fill: var(--hover-color);
